@@ -6,10 +6,10 @@ checkBtn.addEventListener("click", (e) => {
 	let regex = /[aeiou]/g;
 	if (regex.test(userText.value)) {
 		let vowels = userText.value.match(regex);
-		console.log(vowels);
-
 		alert(`Your text contains ${vowels.length} vowels`);
-		userText.value = "";
-		userText.focus();
+	} else {
+		alert("Your text does not contain vowels");
 	}
+	userText.value = "";
+	userText.focus();
 });
