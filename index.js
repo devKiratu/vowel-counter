@@ -7,8 +7,8 @@ checkBtn.addEventListener("click", (e) => {
 	if (regex.test(userText.value)) {
 		let vowels = userText.value.match(regex);
 		vowels.length > 1
-			? alert(`Your text contains ${vowels.length} vowels`)
-			: alert(`Your text contains ${vowels.length} vowel`);
+			? alert(`Your text contains ${vowels.length} vowels 😎😎`)
+			: alert(`Your text contains ${vowels.length} vowel 😏😏`);
 	} else {
 		alert("Your text does not contain vowels");
 	}
